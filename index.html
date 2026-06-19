@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>adas.wrobel — portfolio archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="topbar">
+    <div>portfolio archive / selected visual works / 2025–2026</div>
+    <div>Current Local Time <span id="clock">00:00:00</span></div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="intro-copy">Nazywam się Adam Wróbel.<br />Zbieram tu rzeczy, które zrobiłem w ostatnim czasie: obrazy, plakaty, szkice, video i szkolne projekty.</p>
+        <h1 class="wordmark">adas.wrobel</h1>
+        <h2 class="portfolio-mark">— portfolio</h2>
+        <div class="tagline">POSTERS / PAINTINGS / SKETCHES / SCHOOL PROJECTS / EDITS / THINGS IN BETWEEN</div>
+      </div>
+
+      <div class="hero-media">
+        <div class="notice window-green" id="archiveNotice" aria-label="archive notice" aria-hidden="true">
+          <div class="macbar dots-only">
+            <button class="dot red" id="closeNotice" aria-label="close archive notice"></button>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <h3>archive notice</h3>
+          <p>To jest folder z pracami, które zostały wykonane w ostatnim czasie: obrazy, plakaty, szkice, video i zadania szkolne. Bez układania ich pod jedną historię.</p>
+          <p>Kliknij plik, żeby zobaczyć większy podgląd.</p>
+        </div>
+
+        <figure class="photo-card">
+          <img src="assets/Adam_Photo.jpg" alt="Adam Wróbel photo reference" />
+          <figcaption>ADAM WRÓBEL / VISUAL ARCHIVE / PHOTO REFERENCE</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="hero-nav" aria-label="portfolio navigation">
+      <button data-scroll="#selected">open comprehensive archive</button>
+      <button id="resetView">reset view</button>
+      <button id="openContact">contact</button>
+      <button data-scroll="#school">school projects</button>
+      <a class="ig-pill" href="https://www.instagram.com/adas_wrobel/" target="_blank" rel="noreferrer">instagram</a>
+    </nav>
+
+    <div class="ticker" aria-hidden="true">
+      <span>READ NOW — ADAM WRÓBEL — SELECTED WORKS — POSTER / TYPE / PAINT / SKETCH / VIDEO — ARCHIVE OPEN — READ NOW — ADAM WRÓBEL — SELECTED WORKS — POSTER / TYPE / PAINT / SKETCH / VIDEO — ARCHIVE OPEN —</span>
+    </div>
+
+    <section class="selected-intro" aria-label="selected works divider">
+      <div class="archive-separator">
+        <span class="separator-line"></span>
+        <span class="separator-tag">ARCHIVE OPEN</span>
+        <span class="separator-line"></span>
+      </div>
+      <div class="selected-title-block">
+        <div>
+          <p class="selected-prefix">OPEN COMPREHENSIVE ARCHIVE / 01</p>
+          <h2>Selected Works</h2>
+          <p class="selected-short-copy">Wybrane prace z folderu. Bez ustawiania wszystkiego pod jeden styl.</p>
+        </div>
+        <div class="selected-green-notes" aria-hidden="true">
+          <span>CLICK FILE TO OPEN</span>
+          <span>PAINT / VIDEO / SKETCH</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="selected" id="selected">
+      <div class="section-kicker">OPEN ARCHIVE / SELECTED WORKS</div>
+      <div class="works-pair">
+        <article class="work-window mac-window modal-item" data-key="inner">
+          <div class="window-titlebar"><div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span>Inner_Map.png</span></div>
+          <div class="work-image equal"><img src="assets/Inner_Map.png" alt="Inner Map" /></div>
+          <footer><h3>Inner Map</h3><p>PAINT / CANVAS</p></footer>
+        </article>
+
+        <article class="work-window mac-window modal-item" data-key="ink">
+          <div class="window-titlebar"><div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span>Ink_Figure.png</span></div>
+          <div class="work-image equal"><img src="assets/Ink_Figure.png" alt="Ink Figure" /></div>
+          <footer><h3>Ink Figure</h3><p>PAINT / CANVAS</p></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-section" id="video">
+      <div class="section-kicker">VIDEO FILE / EDIT</div>
+      <div class="video-shell">
+        <div class="video-frame">
+          <video id="portfolioVideo" preload="metadata" loop playsinline poster="assets/Kids_poster.jpg">
+            <source src="assets/Kids_from_the_West.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <aside class="video-copy">
+          <div class="file-name">Kids_from_the_West.mov</div>
+          <h2>Kids from the West</h2>
+          <p>Edycja zrobiona do utworu Kids from the West.<br />Oparta na prostym ruchu i mocnym kolorze.</p>
+          <div class="video-controls">
+            <button id="playPause">PLAY</button>
+            <button id="muteToggle">MUTE</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="supporting" id="supporting">
+      <div class="section-kicker">SUPPORTING FILES / PAINT + DRAWING</div>
+      <div class="support-grid">
+        <article class="paper-card modal-item flower-card" data-key="flowers">
+          <div class="file-label">Flowers.jpg</div>
+          <div class="paper-image"><img src="assets/Flowers.jpg" alt="Flowers" /></div>
+          <footer><h3>Flowers</h3><p>PAINT / CANVAS</p><p class="card-note">Mały obraz z kwiatami, spokojniejszy niż reszta prac.</p></footer>
+        </article>
+        <article class="paper-card modal-item mannequin-card" data-key="mannequin">
+          <div class="file-label">Mannequin_Study.pdf</div>
+          <div class="paper-image wide"><img src="assets/Mannequin_Study.jpg" alt="Mannequin Study" /></div>
+          <footer><h3>Mannequin Study</h3><p>PENCIL / STILL LIFE</p><p class="card-note">Rysunek z martwej natury, zostawiony w szerokim formacie.</p></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="process-copy">
+        <div class="section-kicker">PROCESS / SKETCHBOOK</div>
+        <h2>Sketchbook</h2>
+        <p>Szkicownik szkolny.<br />Rysunek powstał bez dużego planu, bardziej jako coś robione w międzyczasie.</p>
+      </div>
+      <div class="sketch-stage">
+        <article class="sketch-card" id="sketchCard">
+          <div class="drag-handle" id="dragHandle">DRAG / INSPECT</div>
+          <div class="sketch-number">Sketchbook_scan.png</div>
+          <img src="assets/Sketchbook_scan.jpg" alt="Sketchbook During Class" draggable="false" />
+          <footer><h3>Sketchbook</h3><p>PENCIL / SKETCHBOOK</p></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="school" id="school">
+      <div class="school-heading">
+        <div class="section-kicker">SELECTED CATEGORY</div>
+        <h2>School Projects</h2>
+      </div>
+      <div class="school-layout">
+        <aside class="school-copy">
+          <p>Osobny blok z projektami z zajęć szkolnych.<br />Zrobione wokół konkretnych zadań: plakat, typografia, grafika komputerowa.</p>
+          <div class="catalog-strip">
+            <span>VIEW: POSTER</span>
+            <span>SORT: SCHOOL</span>
+            <span>FORMAT: PSD</span>
+          </div>
+        </aside>
+
+        <article class="school-window mac-window modal-item" data-key="taste">
+          <div class="window-titlebar"><div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span>Taste_The_Call.psd</span></div>
+          <div class="school-image"><img src="assets/Taste_The_Call.jpg" alt="Taste The Call" /></div>
+          <footer><h3>Taste The Call</h3><p>POSTER / PHOTOSHOP</p></footer>
+        </article>
+
+        <div class="school-quote">
+          <p>SCHOOL BRIEF / POSTER TEST</p>
+          <p>COMPOSITION STUDY / PSD FILES</p>
+        </div>
+
+        <article class="school-window mac-window modal-item" data-key="marty">
+          <div class="window-titlebar"><div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span>Marty_Supreme.psd</span></div>
+          <div class="school-image"><img src="assets/Marty_Supreme.jpg" alt="Marty Supreme" /></div>
+          <footer><h3>Marty Supreme</h3><p>POSTER / PHOTOSHOP</p></footer>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="contact-panel" id="contactPanel" aria-hidden="true">
+    <div class="window-titlebar"><div class="dots"><button class="dot red" id="closeContact" aria-label="close contact"></button><span class="dot yellow"></span><span class="dot green"></span></div><span>Contact.txt</span></div>
+    <h2>Contact</h2>
+    <p>Adam Wróbel</p>
+    <p><a href="mailto:adam.wrobel.07@gmail.com">adam.wrobel.07@gmail.com</a></p>
+    <p><a href="https://www.instagram.com/adas_wrobel/" target="_blank" rel="noreferrer">@adas_wrobel</a></p>
+  </aside>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-window mac-window" role="dialog" aria-modal="true" aria-label="work preview">
+      <div class="window-titlebar"><div class="dots"><button class="dot red" id="modalClose" aria-label="close preview"></button><span class="dot yellow"></span><span class="dot green"></span></div><span id="modalFile">file.png</span></div>
+      <div class="modal-body">
+        <div class="modal-media"><img id="modalImg" src="" alt="" /></div>
+        <div class="modal-copy"><p class="modal-type" id="modalType"></p><h2 id="modalTitle"></h2><p id="modalDesc"></p></div>
+      </div>
+      <div class="modal-actions"><button id="prevWork">PREV</button><button id="nextWork">NEXT</button></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <h2>Adam Wróbel</h2>
+      <p>visual archive / 2025–2026</p>
+    </div>
+    <div class="end-sticker">END OF ARCHIVE / THANK YOU</div>
+    <div class="footer-contact">
+      <a href="https://www.instagram.com/adas_wrobel/" target="_blank" rel="noreferrer">@adas_wrobel</a>
+      <a href="mailto:adam.wrobel.07@gmail.com">adam.wrobel.07@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
